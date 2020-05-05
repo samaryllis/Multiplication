@@ -76,6 +76,9 @@ document.getElementById("check").onclick = function () {
 
   var div = document.createElement("div");
 
+  var correctCount = document.getElementById("correctCount").textContent;
+  var wrongCount = document.getElementById("wrongCount").textContent;
+
   if (checkNumber == result) {
     // If user is Right
     document.getElementById("trueSpan").style.display = "inline-block";
@@ -83,6 +86,9 @@ document.getElementById("check").onclick = function () {
     div.className = "logRight";
     var audio = new Audio("sounds/right3.wav");
     audio.play();
+
+    correctCount++;
+    document.getElementById("correctCount").textContent = correctCount;
   } else {
     // If user is wrong
     wrongOnce = true;
@@ -94,6 +100,8 @@ document.getElementById("check").onclick = function () {
 
     var audio = new Audio("sounds/wrong2.mp3");
     audio.play();
+    wrongCount++;
+    document.getElementById("wrongCount").textContent = wrongCount;
   }
 
   var logMessage = document.createTextNode(
