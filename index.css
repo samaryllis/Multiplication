@@ -4,6 +4,7 @@ label {
   border-color: aquamarine;
   padding: 3px;
   margin: 5px;
+  display: inline-block;
 }
 button {
   margin: 20px;
@@ -127,4 +128,17 @@ button {
   border: 1px solid;
   margin: 3px;
   padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  #inputs {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+  }
+  #inputs input {
+    width: 90px;
+    border: 1px solid grey;
+  }
 }
