@@ -1,0 +1,130 @@
+label {
+  border: 5px;
+  border-style: outset;
+  border-color: aquamarine;
+  padding: 3px;
+  margin: 5px;
+}
+button {
+  margin: 20px;
+}
+#checkDiv span {
+  display: none;
+}
+#trueSpan {
+  color: limegreen;
+}
+#falseSpan {
+  color: red;
+}
+
+/* https://www.bestcssbuttongenerator.com/ */
+#start {
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+#start:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+#start:active {
+  position: relative;
+  top: 1px;
+}
+
+#check {
+  box-shadow: inset 0px -3px 7px 0px #3dc21b;
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color: #44c767;
+  border-radius: 3px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+#check:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a;
+}
+#check:active {
+  position: relative;
+  top: 1px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  color: coral;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logRight {
+  color: limegreen;
+  border: limegreen;
+}
+.logWrong {
+  color: red;
+  border: red;
+}
+
+#log {
+  height: 500px;
+  overflow-y: scroll;
+}
+#log div {
+  display: inline-block;
+  border: 1px solid;
+  margin: 3px;
+  padding: 2px;
+}
