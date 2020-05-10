@@ -9,69 +9,76 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>MULTIPLICATION</h1>
-    <h4>Which table(s) do you want to learn?</h4>
-    <div>
-      <label for="number1">
-        <input type="checkbox" name="number1" id="number1" value="1" /> 1
-      </label>
-      <label for="number2">
-        <input type="checkbox" name="number2" id="number2" value="2" /> 2
-      </label>
-      <label for="number3">
-        <input type="checkbox" name="number3" id="number3" value="3" /> 3
-      </label>
+    <div class="content">
+      <h1>MULTIPLICATION</h1>
+      <h4>Which table(s) do you want to learn?</h4>
+      <div>
+        <label for="number1">
+          <input type="checkbox" name="number1" id="number1" value="1" /> 1
+        </label>
+        <label for="number2">
+          <input type="checkbox" name="number2" id="number2" value="2" /> 2
+        </label>
+        <label for="number3">
+          <input type="checkbox" name="number3" id="number3" value="3" /> 3
+        </label>
 
-      <label for="number4">
-        <input type="checkbox" name="number4" id="number4" value="4" /> 4
-      </label>
+        <label for="number4">
+          <input type="checkbox" name="number4" id="number4" value="4" /> 4
+        </label>
 
-      <label for="number5">
-        <input type="checkbox" name="number5" id="number5" value="5" /> 5
-      </label>
-      <label for="number6">
-        <input type="checkbox" name="number6" id="number6" value="6" /> 6
-      </label>
-      <label for="number7">
-        <input type="checkbox" name="number7" id="number7" value="7" /> 7
-      </label>
-      <label for="number8">
-        <input type="checkbox" name="number8" id="number8" value="8" /> 8
-      </label>
-      <label for="number9">
-        <input type="checkbox" name="number9" id="number9" value="9" /> 9
-      </label>
-      <label for="number10">
-        <input type="checkbox" name="number10" id="number10" value="10" /> 10
-      </label>
-    </div>
-    <div><button id="start">Start</button></div>
-    <div id="inputs">
-      <input type="number" name="times1" id="times1" />
-      x
-      <input type="number" name="times2" id="times2" />
-      =
-      <input type="number" name="result" id="result" />
-    </div>
-    <div id="checkDiv">
-      <button id="check">Check</button>
-      <span id="trueSpan">Correct</span>
-      <span id="falseSpan">Wrong</span>
-    </div>
-    <div id="count">
-      <div>Correct: <span id="correctCount">0</span></div>
-      <div>Wrong: <span id="wrongCount">0</span></div>
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p id="modalContent"></p>
+        <label for="number5">
+          <input type="checkbox" name="number5" id="number5" value="5" /> 5
+        </label>
+        <label for="number6">
+          <input type="checkbox" name="number6" id="number6" value="6" /> 6
+        </label>
+        <label for="number7">
+          <input type="checkbox" name="number7" id="number7" value="7" /> 7
+        </label>
+        <label for="number8">
+          <input type="checkbox" name="number8" id="number8" value="8" /> 8
+        </label>
+        <label for="number9">
+          <input type="checkbox" name="number9" id="number9" value="9" /> 9
+        </label>
+        <label for="number10">
+          <input type="checkbox" name="number10" id="number10" value="10" /> 10
+        </label>
       </div>
+      <div><button id="start">Start</button></div>
+      <div id="inputs">
+        <input type="number" name="times1" id="times1" />
+        x
+        <input type="number" name="times2" id="times2" />
+        =
+        <input type="number" name="result" id="result" />
+      </div>
+      <div id="checkDiv">
+        <button id="check">Check</button>
+        <span id="trueSpan">Correct</span>
+        <span id="falseSpan">Wrong</span>
+      </div>
+      <div id="count">
+        <div>Correct: <span id="correctCount">0</span></div>
+        <div>Wrong: <span id="wrongCount">0</span></div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modalContent"></p>
+        </div>
+      </div>
+      <div id="log"></div>
     </div>
-    <div id="log"></div>
+    <footer class="footer">
+      <a href="https://github.com/samaryllis/Multiplication"
+        >Give me Feedback on Github</a
+      >
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

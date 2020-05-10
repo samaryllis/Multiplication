@@ -130,6 +130,22 @@ button {
   padding: 2px;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* height: 40px; */
+  background-color: #85c1e9;
+  margin: auto;
+  padding: 30px 10px;
+  color: #0b0e07;
+}
+footer a:visited {
+  color: blue;
+}
+
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   #inputs {
@@ -140,5 +156,8 @@ button {
   #inputs input {
     width: 90px;
     border: 1px solid grey;
+  }
+  footer {
+    padding: 10px;
   }
 }
